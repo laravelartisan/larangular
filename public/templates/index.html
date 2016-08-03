@@ -1,0 +1,13 @@
+<a href="http://localhost:8000/#/create">
+    Create User
+</a>
+
+<div ng-repeat="user in users" class="well">
+    <!--{{user.id}}-->
+    Username : {{ user.username }}
+    Email : {{ user.email }}
+
+    <button ng-click="editUser(user.id)"> edit user</button>
+    <button ng-click="deleteUser(user.id)"> delete user</button>
+
+</div>
